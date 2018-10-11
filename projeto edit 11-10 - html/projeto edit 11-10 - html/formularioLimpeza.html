@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>Limpeza urbana</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME &nbsp;<span class="glyphicon glyphicon-home"></span></a>
+    <a href="formularioLimpeza.html" class="w3-bar-item w3-button w3-padding-large">LIMPEZA URBANA &nbsp;<span class=" glyphicon glyphicon-trash"></span></a>
+    <a href="formularioPavimentacao.html" class="w3-bar-item w3-button w3-padding-large">PAVIMENTAÇÃO &nbsp;<span class="glyphicon glyphicon-road"></span></a>
+    <a href="formularioTransporte.html" class="w3-bar-item w3-button w3-padding-large">TRANSPORTE COLETIVO &nbsp;<i class="fa fa-bus"></i></a>
+    <a <a href="contato.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATO &nbsp;<span class="glyphicon glyphicon-earphone"></span></a> 
+
+  </div>
+</div> 
+   <br/>
+   <br>
+    <br>
+    <br>
+<div class="container">
+  <form id="formId">
+  <div class="form-group">
+  <h2 class="w3-wide w3-center">LIMPEZA URBANA</h2>
+<br>
+   <label for="nome">Nome completo:</label>
+      <input type="text" class="form-control" id="nomeId" required name="nomeLimp" placeholder="Digite seu nome">
+  <br>
+      <label for="email">E-mail:</label>
+      <input type="text" class="form-control" id="emailId" required name="emailLimp" placeholder="Digite seu E-mail">
+
+  <br>
+      <label for="telefone">Telefone:</label>
+      <input type="text" class="form-control" id="telefoneId" required name="telLimp" placeholder="(DDD) XXXXXXXXX">
+  </div>
+  <br>
+   <label for="selecionar">Selecione uma opção:</label>
+     <select id="selecao" class="form-control">
+      <option> Selecione... </option>
+      <option> Coleta seletiva </option>
+      <option> Dias de coleta </option>
+      <option> Horários</option>
+      <option> Outros </option>
+    </select>
+  <br>
+    <label for="nome">Endereço:</label>
+    <input type="text" class="form-control" id="ruaId" required name="ruaLimp" placeholder="Digite o nome da rua e número">
+  <br>   
+   <label for="nome">Bairro:</label>
+   <input type="text" class="form-control" id="bairroId" required name="bairroLimp" placeholder="Digite o bairro">
+  <br> 
+    <label for="selecionar">Cidade:</label>
+     <select id="selecao" class="form-control">
+      <option> Selecione... </option>
+      <option> Alvorada </option>
+      <option> Canoas</option>
+      <option> Porto Alegre </option>
+      <option> Viamão </option>
+      <option> Outra </option>
+    </select>
+    <br>
+   <div class="form-group">
+      <label for="comment">Descreva:</label>
+      <textarea class="form-control" rows="5" id="comentarioId" required name="descrevaLimp" placeholder="Descreva aqui sua reclamação"></textarea>
+    </div>
+
+
+    
+    <button type="submit" value="botaoEnviar" class="btn btn-default" onclick="botaoEnviar()">Enviar &emsp;<span class="glyphicon glyphicon-floppy-saved"></span></button>
+    <br>
+    <br>
+    <br>
+    <br>
+  </form>
+</div>
+
+ <!-- Contato -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">CONTATO</h2>
+    <p class="w3-opacity w3-center"><i>Deixe sua mensagem !</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Porto Alegre, Brasil<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +55 51 00000-0000<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: contato@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form>
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="form-control" type="text" placeholder="Nome" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="form-control" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <textarea class="form-control" rows="5" id="comentarioId" placeholder="Descreva aqui sua mensagem"></textarea>
+          <button class="w3-button w3-black w3-section w3-right" type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- Fim da Página -->
+</div>
+
+<!-- Rodapé -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Desenvolvido por Felipe Costa e Pedro Gomes</p>
+</footer>
+
+
+
+</body>
+</html>
