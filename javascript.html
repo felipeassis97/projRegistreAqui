@@ -1,0 +1,20 @@
+function botaoEnviar(){
+    var nome = document.getElementById('nomeId').value; 
+    var email = document.getElementById('emailId').value;
+    var selecionar = document.getElementById('selecao').value;
+    var rua = document.getElementById('ruaId').value;
+    var comentario = document.getElementById('comentarioId').value;
+  
+    document.writeln("A SOLICITAÇÃO SERÁ ENVIADA PARA UMA EMPRESA<br><br>");
+    document.writeln("SUA RECLAMAÇÃO É IMPORTANTE PRA CIDADE<br>");
+    document.writeln("-----------------------------------<br>");
+    document.writeln("Nome: " + nome);
+    document.writeln("<br>E-mail: " + email);
+    document.writeln("<br>Selecionou: " + selecionar);
+    document.writeln("<br>Rua: " + rua);
+    document.writeln("<br>Comentário: " + comentario);
+    document.writeln("<br>-----------------------------------");
+
+
+    return true;
+}
